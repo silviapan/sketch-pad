@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
     //Default grid size is 16px by 16px 
-    drawGrid(16);
+    drawGrid(20);
 
     //Calls functions for changing drawing colors when their buttons are clicked
     black();
@@ -20,6 +20,8 @@ $(document).ready(function() {
 
    //Function to draw grid 
     function drawGrid(size) {
+
+
         for (var x = 1; x <= size; x++) {
             for (var y = 1; y <= size; y++) {
                 $('.grid').append($('<div class="square"></div>'));
@@ -90,7 +92,14 @@ $(document).ready(function() {
         $('#submit').click(function() {
             $('.grid').empty();
             var newSize = $('input[name="resolution"]').val();
-            drawGrid(newSize);
+
+            if (newSize > 60) {
+                alert('The maximum size is 60.')
+                drawGrid(60);
+            }
+            else {
+                drawGrid(newSize);
+            }
         });
     }
 
@@ -110,7 +119,7 @@ $(document).ready(function() {
     function reset() {
         $('#reset').click(function() {
             $('.grid').empty();
-            drawGrid(16);
+            drawGrid(20);
         });
     }
 
