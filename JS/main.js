@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
     //Default grid size is 16px by 16px 
-    drawGrid(20);
+    drawGrid(16);
 
     //Calls functions for changing drawing colors when their buttons are clicked
     black();
@@ -10,7 +10,7 @@ $(document).ready(function() {
     random();
     
     //Default borders are on
-    border(); $('#border').prop('checked', true);
+    border(); 
 
     //Grid options
     changeGrid();
@@ -33,6 +33,7 @@ $(document).ready(function() {
         $('.square').height(squareSize);
 
         defaultBlack();
+        $('#border').prop('checked', true);
     }
 
     //Default drawing color is black - once page loads, user can draw in black
@@ -107,11 +108,11 @@ $(document).ready(function() {
         $('#border').change(function() {
             if($(this).is(':checked')) {
                 $('.square').css('outline', '1px solid black');
-                $('#border').prop('checked', true);
+                // $('#border').prop('checked', true);
             } 
             else {
                 $('.square').css('outline', 'none');
-                $('#border').prop('checked', true);
+                // $('#border').prop('checked', true);
             }
         });
     }
@@ -120,7 +121,8 @@ $(document).ready(function() {
     function reset() {
         $('#reset').click(function() {
             $('.grid').empty();
-            drawGrid(20);
+            drawGrid(16);
+            $("#sizeSelect").val("16");
         });
     }
 
