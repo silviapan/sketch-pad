@@ -20,15 +20,14 @@ $(document).ready(function() {
 
    //Function to draw grid 
     function drawGrid(size) {
-
-
         for (var x = 1; x <= size; x++) {
             for (var y = 1; y <= size; y++) {
                 $('.grid').append($('<div class="square"></div>'));
             };
         };
 
-        var squareSize = 650/size;
+        var totalGrideSize = 650;
+        var squareSize = (totalGrideSize - 1)/size;
 
         $('.square').width(squareSize);
         $('.square').height(squareSize);
@@ -108,9 +107,11 @@ $(document).ready(function() {
         $('#border').change(function() {
             if($(this).is(':checked')) {
                 $('.square').css('outline', '1px solid black');
+                $('#border').prop('checked', true);
             } 
             else {
                 $('.square').css('outline', 'none');
+                $('#border').prop('checked', true);
             }
         });
     }
