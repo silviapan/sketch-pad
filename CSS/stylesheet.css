@@ -1,0 +1,108 @@
+* {font-family: 'Poiret One', arial, sans-serif, cursive;}
+
+div {font-family: 'Poiret One', arial, sans-serif, cursive;}
+
+.wrapper {
+	width: 1000px;
+	height: 750px;
+	border: 1px solid red;
+	margin: 40px auto 0 auto;
+	display: block;
+	padding: 40px;
+}
+
+.menu {
+	width: 300px;
+	height: 600px;
+	border: 1px solid black;
+	float: right;
+	padding-left: 10px;
+}
+
+.grid {
+	display: inline-block;
+	height: 650px;
+	width: 650px;
+	line-height: 0;
+	margin: 0;
+	padding: 0;
+}
+
+.square {
+	background-color: white;
+	display: inline-block;
+	outline: 1px solid black;
+}
+
+button {
+	background: transparent;
+	box-shadow: none;
+	border: none;
+	display: inline;
+	font-size: 24px;
+	padding-bottom: 10px;
+}
+
+#submit, #reset, #clear {
+	border: 1px solid #ccc;
+}
+
+input {
+	font-size: 18px;
+}
+
+#sizeSelect {
+	width: 60px;
+}
+
+#blackBox {
+	width: 30px;
+	height: 30px;
+	background-color: #000;
+}
+
+#redBox {
+	width: 30px;
+	height: 30px;
+	background-color: red;
+}
+
+#randomBox {
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	position: relative;
+	background: linear-gradient(top, #ff6699, #ffff66, #33cc33, #6600ff);
+	background: -webkit-linear-gradient(top, #ff6699, #ffff66, #33cc33, #6600ff);
+	background: -moz-linear-gradient(top, #ff6699, #ffff66, #33cc33, #6600ff);
+	background: -o-linear-gradient(top, #ff6699, #ffff66, #33cc33, #6600ff);
+	background: -ms-linear-gradient(top, #ff6699, #ffff66, #33cc33, #6600ff);
+}
+
+#whiteBox {
+	width: 30px;
+	height: 30px;
+	background-color: white;
+	outline: 1px solid #ccc;
+}
+
+
+h1{
+	font-size: 80px;
+	font-weight: bold;
+}
+
+h2 {
+	line-height: 60px;
+	font-size: 40px;
+	text-align: center;
+}
+
+h3 {
+	line-height: 40px;
+	font-size: 30px;
+}
+
+span {
+	font-size: 20px;
+}

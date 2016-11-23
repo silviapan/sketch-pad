@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	
+	<title>Sketch Pad</title>
+
+	<link rel="stylesheet" type="text/css" href="CSS/normalize.css">
+	<link rel="stylesheet" type="text/css" href="CSS/stylesheet.css">
+
+	<link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+
+	<script src="JS/jquery.js"></script>
+	<script type="text/javascript" src="JS/main.js"></script>
+
+</head>
+<body>
+
+<div class="wrapper">
+	<h1>sketch<span> by silvia pan</span></h1>
+	
+	<div class="menu">
+		<h2>toolbox</h2>
+
+		<h3>drawing color</h3>
+		<button id="black"><div id="blackBox"></div></button>
+		<button id="red"><div id="redBox"></div></button>
+		<button id="random"><div id="randomBox"></div></button>
+		<button id="white"><div id="whiteBox"></div></button>
+
+
+		<h3>image resolution</h3>
+		<input type="number" id="sizeSelect" name="resolution" value="16" min="1" max="60">
+		<button id="submit">submit</button>
+
+		<h3>options</h3>
+		<input type="checkbox" id="border">borders
+		<button id="reset">reset</button>
+		<button id="clear">clear</button>
+	</div>
+
+	<div class="grid"></div>
+
+</div>
+
+</body>
+</html>
